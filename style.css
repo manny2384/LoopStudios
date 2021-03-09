@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.sec1{
+    background-image: url("./images/desktop/image-hero.jpg");
+    height: 650px;
+    background-repeat: no-repeat;
+}
+.sec1 section{
+    display: grid;
+    grid-template-columns: 2.5fr 1.5fr;
+    padding: 70px 140px;
+}
+.sec1 .logo{
+    font-size: 30px;
+    text-align: left;
+    padding-left: 20px;
+}
+.sec1 section div{
+    text-align: center;
+}
+.sec1 ul{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    list-style: none;
+    font-weight: 900;
+}
+.sec1 ul li{
+    cursor: pointer;
+    padding: 5px;
+    color: white;
+}
+.sec1 ul li:hover{
+    color:blue
+}
+.immersive{
+    font-size: 70px;
+    color: white;
+    padding: 30px;
+    width: 80%;
+}
+
+.lead{
+    padding: 70px 10%;
+}
+.description{
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    width: 350px;
+    background-color: white;
+    padding: 5%;
+}
+.description .title_dex{
+    font-size: 55px;
+}
+
+.creations .c{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 20px 10%;
+}
+.creations .c div{
+    font-size: 65px;
+}
+.c .b{
+    text-align: right;
+}
+.c div button{
+    font-size: 20px;
+    padding: 5px;
+    width: 100px
+}
+
+.myimages{
+    text-align: center;
+}
+.myimages img{
+    padding: 20px;
+}
+
+footer{
+    color: white;
+    background-color: black;
+}
+.foot{
+    display: grid;
+    grid-template-columns: 2.5fr 1.5fr;
+    padding: 15px 140px;
+}
+.foot .social{
+    text-align: right;
+}
+.foot .social a{
+    padding: 5px;
+}
+.foot a{
+    cursor: pointer;
+}
+.foot div ul{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    list-style: none;
+    justify-content: left;
+}
+.foot div ul li{
+    text-align: center;
+    padding-right: 10px;
+}
+.foot .l{
+    text-align: right;
+}
+
+@media only screen and (min-width: 1442px){
+    body{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
