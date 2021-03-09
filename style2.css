@@ -33,12 +33,13 @@
         font-size: 35px;
         color: white;
     }
+
     .sec1 ul{
         display: none;
         grid-template-rows: auto auto auto auto auto;
         list-style: none;
         font-weight: 900;
-        width: 100px;
+        width: 200px;
         position: fixed;
         right: 100px;
         text-align: center;
