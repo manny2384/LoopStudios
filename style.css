@@ -8,6 +8,9 @@ body{
 
 }
 
+.intro{
+    justify-content: center;
+}
 .sec1{
     background-image: url("./images/desktop/image-hero.jpg");
     height: 650px;
@@ -17,11 +20,15 @@ body{
     display: grid;
     grid-template-columns: 2.5fr 1.5fr;
     padding: 70px 140px;
+
 }
 .sec1 .logo{
     font-size: 30px;
     text-align: left;
     padding-left: 20px;
+}
+.nav_btn{
+    display: none;
 }
 .sec1 section div{
     text-align: center;
@@ -47,16 +54,25 @@ body{
     width: 80%;
 }
 
-.lead{
-    padding: 70px 10%;
+.mid{
+    width: fit-content;
+    margin-left:auto;
+    margin-right:auto;
+    padding: 100px 0;
+
+}
+.lead div{
+    background-image: url("images/desktop/image-interactive.jpg");
+    height: 500px;
+    width: 731px;
 }
 .description{
     position: absolute;
-    top: 85%;
-    left: 50%;
+    top: 100%;
+    left: 60%;
     width: 350px;
     background-color: white;
-    padding: 5%;
+    padding: 50px;
 }
 .description .title_dex{
     font-size: 55px;
@@ -65,7 +81,6 @@ body{
 .creations .c{
     display: grid;
     grid-template-columns: 3fr 1fr;
-    padding: 20px 10%;
 }
 .creations .c div{
     font-size: 65px;
@@ -75,15 +90,42 @@ body{
 }
 .c div button{
     font-size: 20px;
-    padding: 5px;
-    width: 100px
+    width: 100px;
 }
 
 .myimages{
-    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-.myimages img{
-    padding: 20px;
+.myimages div{
+    height: 450px;
+    width: 256px;
+    border: solid white 5px;
+}
+
+.deep{
+    background-image: url("./images/desktop/image-deep-earth.jpg");
+}
+.arcade{
+    background-image: url("./images/desktop/image-night-arcade.jpg");
+}
+.soccer{
+    background-image: url("./images/desktop/image-soccer-team.jpg");
+}
+.thegrid{
+    background-image: url("./images/desktop/image-grid.jpg");
+}
+.above{
+    background-image: url("./images/desktop/image-from-above.jpg");
+}
+.borealis{
+    background-image: url("./images/desktop/image-pocket-borealis.jpg");
+}
+.curiosity{
+    background-image: url("./images/desktop/image-curiosity.jpg");
+}
+.fisheye{
+    background-image: url("./images/desktop/image-fisheye.jpg");
 }
 
 footer{
@@ -119,8 +161,9 @@ footer{
 }
 
 @media only screen and (min-width: 1442px){
-    body{
-        padding-left: 10%;
-        padding-right: 10%;
+    .sec1{
+        width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }

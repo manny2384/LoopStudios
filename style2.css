@@ -1,0 +1,105 @@
+@media only screen and (max-width: 1050px){
+    body{
+        width: fit-content;
+    }
+    .logo img{
+        src: url("./images/mobile/image-hero.jpg");
+    }
+
+    .intro{
+        justify-content: center;
+    }
+    .sec1{
+        background-image: url("./images/desktop/image-hero.jpg");
+        height: 650px;
+        background-repeat: no-repeat;
+    }
+    .sec1 section{
+        display: grid;
+        grid-template-columns: 2.5fr 1.5fr;
+        padding: 70px 140px;
+    
+    }
+    .sec1 .logo{
+        font-size: 30px;
+        text-align: left;
+        padding-left: 20px;
+    }
+    .sec1 section div{
+        text-align: right;
+    }
+    .nav_btn{
+        display: grid;
+        font-size: 35px;
+        color: white;
+    }
+    .sec1 ul{
+        display: none;
+        grid-template-rows: auto auto auto auto auto;
+        list-style: none;
+        font-weight: 900;
+        width: 100px;
+        position: fixed;
+        right: 100px;
+        text-align: center;
+        grid-template-columns: auto;
+        border-style: solid;
+        background-color: rgb(53, 52, 52);
+    }
+    .sec1 ul li{
+        cursor: pointer;
+        padding: 5px;
+        color: white;
+        border: solid 1px white;
+    }
+    .sec1 ul li:hover{
+        color:blue
+    }
+    .immersive{
+        font-size: 70px;
+        color: white;
+        padding: 30px;
+        width: 80%;
+    }
+
+    .description{
+        position: inherit;
+    }
+    .lead div{
+        background-image: url("images/mobile/image-interactive.jpg");
+        width: 654px;
+        height:448px;
+    }
+
+    .myimages{
+        grid-template-columns: 1fr;
+    }
+    .myimages div{
+        height: 240px;
+        width: 654px;
+    }
+    .deep{
+        background-image: url("./images/mobile/image-deep-earth.jpg");
+    }
+    .arcade{
+        background-image: url("./images/mobile/image-night-arcade.jpg");
+    }
+    .soccer{
+        background-image: url("./images/mobile/image-soccer-team.jpg");
+    }
+    .thegrid{
+        background-image: url("./images/mobile/image-grid.jpg");
+    }
+    .above{
+        background-image: url("./images/mobile/image-from-above.jpg");
+    }
+    .borealis{
+        background-image: url("./images/mobile/image-pocket-borealis.jpg");
+    }
+    .curiosity{
+        background-image: url("./images/mobile/image-curiosity.jpg");
+    }
+    .fisheye{
+        background-image: url("./images/desktop/image-fisheye.jpg");
+    }
+}
