@@ -104,3 +104,9 @@
         background-image: url("./images/desktop/image-fisheye.jpg");
     }
 }
+
+@media only screen and (min-width: 1051px){
+    .sec1 ul{
+        display: grid;
+    }
+}
