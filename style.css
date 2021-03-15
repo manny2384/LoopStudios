@@ -135,7 +135,7 @@ footer{
 .nav_logo_footer ul{
     list-style: none;
 }
-.nav_footer_item{
+.nav_footer .list_item{
     padding: 10px;
 }
 .social_list{
