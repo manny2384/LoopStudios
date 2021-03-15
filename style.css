@@ -2,168 +2,190 @@
     margin: 0;
     padding: 0;
 }
-
 body{
-    font-family: 'Josefin Sans', sans-serif;
+    height: 100vh;
+    width: 100vw;
+}
+/*      intro section   */
 
+.hero_image_holder{
+    height: 100%;
+    width: 100%;
 }
-
-.intro{
-    justify-content: center;
-}
-.sec1{
-    background-image: url("./images/desktop/image-hero.jpg");
-    height: 650px;
-    background-repeat: no-repeat;
-}
-.sec1 section{
-    display: grid;
-    grid-template-columns: 2.5fr 1.5fr;
-    padding: 70px 140px;
-
-}
-.sec1 .logo{
-    font-size: 30px;
-    text-align: left;
-    padding-left: 20px;
-}
-.nav_btn{
-    display: none;
-}
-.sec1 section div{
-    text-align: center;
-}
-.sec1 ul{
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    list-style: none;
-    font-weight: 900;
-}
-.sec1 ul li{
-    cursor: pointer;
-    padding: 5px;
-    color: white;
-}
-.sec1 ul li:hover{
-    color:blue
-}
-.immersive{
-    font-size: 70px;
-    color: white;
-    padding: 30px;
-    width: 80%;
-}
-
-.mid{
-    width: fit-content;
-    margin-left:auto;
-    margin-right:auto;
-    padding: 100px 0;
-
-}
-.lead div{
-    background-image: url("images/desktop/image-interactive.jpg");
-    height: 500px;
-    width: 731px;
-}
-.description{
-    position: absolute;
-    top: 100%;
-    left: 60%;
-    width: 350px;
-    background-color: white;
-    padding: 50px;
-}
-.description .title_dex{
-    font-size: 55px;
-}
-
-.creations .c{
+.nav{
+    top: 0;
     display: grid;
     grid-template-columns: 3fr 1fr;
+    padding: 20px;
+    position: absolute;
+    width: 89vw;
+    height: 100vh;
+    z-index: 2;
 }
-.creations .c div{
-    font-size: 65px;
-}
-.c .b{
-    text-align: right;
-}
-.c div button{
-    font-size: 20px;
-    width: 100px;
-}
-
-.myimages{
+.nav_icon{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-.myimages div{
-    height: 450px;
-    width: 256px;
-    border: solid white 5px;
+    justify-content: right;
 }
 
-.deep{
-    background-image: url("./images/desktop/image-deep-earth.jpg");
+.main_txt{
+    position: absolute;
+    top: 30%;
+    padding: 20px;
 }
-.arcade{
-    background-image: url("./images/desktop/image-night-arcade.jpg");
+.main_txt p{
+    padding: 20px;
+    border-style: solid;
+    font-size: 30px;
 }
-.soccer{
-    background-image: url("./images/desktop/image-soccer-team.jpg");
+.nav_list{
+    list-style: none;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 30%;
+    padding: 20px;
 }
-.thegrid{
-    background-image: url("./images/desktop/image-grid.jpg");
+.nav_item{
+    padding: 10px;
+    list-style: none;
+    font-size: 25px;
 }
-.above{
-    background-image: url("./images/desktop/image-from-above.jpg");
-}
-.borealis{
-    background-image: url("./images/desktop/image-pocket-borealis.jpg");
-}
-.curiosity{
-    background-image: url("./images/desktop/image-curiosity.jpg");
-}
-.fisheye{
-    background-image: url("./images/desktop/image-fisheye.jpg");
+.nav_item a{
+    text-decoration: none;
 }
 
-footer{
+/*      mid section     */
+.lead_img{
+    text-align: center;
+    padding: 20px;
+}
+.lead_img img{
+    width: 100%;
+}
+.lead_txt{
+    text-align: center;
+    padding: 25px;
+}
+.lead_txt p{
+    line-height: 1.6;
+    padding: 20px 5px;
+}
+.creations_header{
+    padding: 30px;
+}
+.creations_header p{
+    text-align: center;
+    font-size: 30px;
+}
+.creation_image{
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 10px 25px;
+    position: relative;
+}
+.creation_image div{
+    position: absolute;
+    padding: 20px;
+    bottom: 10px;
+    font-size: 1.2em;
     color: white;
+}
+.main_img{
+    width: 100%;
+    box-shadow: 10px 10px 5px black;
+    -moz-box-shadow: inset 10px 10px 50px #fff;
+    -webkit-box-shadow: inset 10px 10px 50px #fff;
+    box-shadow: inset 10px 10px 50px #fff;
+}
+
+.create_btn{
+    padding: 20px;
+    text-align: center;
+}
+.main_btn{
+    height: 40px;
+    width: 150px;
+}
+
+/*      footer      */
+footer{
     background-color: black;
 }
-.foot{
-    display: grid;
-    grid-template-columns: 2.5fr 1.5fr;
-    padding: 15px 140px;
+.nav_logo_footer{
+    text-align: center;
+    margin-top: 50px;
 }
-.foot .social{
-    text-align: right;
+.logo_footer{
+    padding: 50px 50px 30px 50px;
 }
-.foot .social a{
+.nav_logo_footer ul{
+    list-style: none;
+}
+.nav_footer_item{
+    padding: 10px;
+}
+.social_list{
+    text-align: center;
+    list-style: none;
+    columns: 4;
+    width: -moz-fit-content;
+    margin: auto;
+    width: fit-content;
+}
+.nav_logo_footer ul li a{
+    text-decoration: none;
+}
+.social_icons{
+    padding: 40px 0px 20px 0px;
+}
+.social_list li{
     padding: 5px;
 }
-.foot a{
-    cursor: pointer;
-}
-.foot div ul{
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
-    list-style: none;
-    justify-content: left;
-}
-.foot div ul li{
+.license{
     text-align: center;
-    padding-right: 10px;
+    margin: auto;
+    padding-bottom: 40px;
 }
-.foot .l{
-    text-align: right;
+/*  w3schools css   */
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
 }
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
 
-@media only screen and (min-width: 1442px){
-    .sec1{
-        width: 1440px;
-        margin-left: auto;
-        margin-right: auto;
+  @media only screen and(min-width: 800px){
+    .nav_icon{
+        display: none;
+    }
+    .nav{
+        width: 100%;
+        height: auto;
+        z-index: 1;
+    }
+    .nav_list{
+        display: grid;
+        position: initial;
+        padding: 0;
+        columns: 5;
+    }
+    .nav_item{
+        padding: 0;
+        text-align: center;
     }
 }
