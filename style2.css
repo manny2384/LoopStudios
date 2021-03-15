@@ -40,6 +40,8 @@
 .mid{
     display: grid;
     justify-content: center;
+    padding-top: 10vh;
+    padding-bottom: 5vh;
 }
 .lead{
     display: grid;
